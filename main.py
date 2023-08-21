@@ -1,1 +1,4 @@
-# This is a sample Python script.
+import Mandelbrot
+
+f = Mandelbrot.Mandelbrot()
+f.draw()
