@@ -7,6 +7,9 @@ class Model:
     im_start = -1
     im_end = 1
 
+    c_real = 0.285
+    c_imag = 0.01
+
     const_max_iterations = 256
 
     def set_width(self, width):
@@ -44,3 +47,16 @@ class Model:
 
     def get_im_end(self):
         return self.im_end
+
+    def set_c_real(self, c_real):
+        self.c_real = c_real
+
+    def get_c_real(self):
+        return self.c_real
+
+    def set_c_imag(self, c_imag):
+        self.c_imag = c_imag
+
+    def get_c_imag(self):
+        return self.c_imag
+    
