@@ -14,7 +14,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Input data</string>
   </property>
   <widget class="QGroupBox" name="groupBox">
    <property name="geometry">
@@ -63,6 +63,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="text">
+     <string>800</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
@@ -72,6 +75,9 @@
       <width>81</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>600</string>
     </property>
    </widget>
   </widget>
@@ -96,6 +102,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="text">
+     <string>-1</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
@@ -118,6 +127,9 @@
       <width>81</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>1</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -155,6 +167,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="text">
+     <string>-1.2</string>
+    </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_6">
     <property name="geometry">
@@ -164,6 +179,9 @@
       <width>81</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>1.2</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_6">
@@ -204,6 +222,9 @@
       <height>22</height>
      </rect>
     </property>
+    <property name="text">
+     <string>0.285</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_7">
     <property name="geometry">
@@ -239,6 +260,9 @@
       <width>81</width>
       <height>22</height>
      </rect>
+    </property>
+    <property name="text">
+     <string>0.01</string>
     </property>
    </widget>
   </widget>

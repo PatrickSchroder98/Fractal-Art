@@ -1,7 +1,9 @@
-from Fractals import Julia, Mandelbrot
+from Interface.UI import Fractals_Mainwindow as f
+from PyQt6.QtWidgets import QApplication, QMainWindow
 
-f = Mandelbrot.Mandelbrot()
-#f.draw()
-
-v = Julia.Julia()
-v.draw()
+ui = f.Ui_MainWindow()
+app = QApplication([])
+window = QMainWindow()
+ui.setupUi(window)
+window.show()
+app.exec()

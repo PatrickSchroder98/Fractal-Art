@@ -1,11 +1,10 @@
-from Fractals.Model import Model as m
 from PIL import Image, ImageDraw
 from math import log, log2, pi, e
 
 
 class Julia:
 
-    def draw(self):
+    def draw(self, m):
 
         img = Image.new(mode='RGB', size=(m.width, m.height), color=(256, 256, 256))
         draw = ImageDraw.Draw(img)

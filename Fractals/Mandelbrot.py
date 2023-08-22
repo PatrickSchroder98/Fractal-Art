@@ -1,9 +1,8 @@
-from Fractals.Model import Model as m
 from PIL import Image, ImageDraw
 
 class Mandelbrot:
 
-    def draw(self):
+    def draw(self, m):
 
         img = Image.new(mode='RGB', size=(m.width, m.height), color=(256, 256, 256))
         draw = ImageDraw.Draw(img)

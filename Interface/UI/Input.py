@@ -7,10 +7,19 @@
 
 
 from PyQt6 import QtCore, QtGui, QtWidgets
+from Fractals.Julia import Julia
+from Fractals.Mandelbrot import Mandelbrot
+from Fractals.Model import Model
 
 
 class Ui_Dialog(object):
-    def setupUi(self, Dialog):
+
+    M = Model()
+    Julia = Julia()
+    Mandelbrot = Mandelbrot()
+    J = True
+
+    def setupUi(self, Dialog, J):
         Dialog.setObjectName("Dialog")
         Dialog.setEnabled(True)
         Dialog.resize(477, 333)
@@ -57,7 +66,7 @@ class Ui_Dialog(object):
         self.label_6.setGeometry(QtCore.QRect(10, 120, 101, 16))
         self.label_6.setObjectName("label_6")
         self.groupBox_3 = QtWidgets.QGroupBox(parent=Dialog)
-        self.groupBox_3.setEnabled(True)
+        self.groupBox_3.setEnabled(J)
         self.groupBox_3.setGeometry(QtCore.QRect(40, 190, 181, 111))
         self.groupBox_3.setObjectName("groupBox_3")
         self.lineEdit_7 = QtWidgets.QLineEdit(parent=self.groupBox_3)
@@ -76,8 +85,11 @@ class Ui_Dialog(object):
         self.pushButton.setGeometry(QtCore.QRect(270, 250, 151, 51))
         self.pushButton.setObjectName("pushButton")
 
+        self.J = J
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.pushButton.clicked.connect(self.clicked)
+
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
@@ -85,12 +97,27 @@ class Ui_Dialog(object):
         self.groupBox.setTitle(_translate("Dialog", "Resolution"))
         self.label.setText(_translate("Dialog", "Width"))
         self.label_2.setText(_translate("Dialog", "Height"))
+        self.lineEdit.setText(_translate("Dialog", "800"))
+        self.lineEdit_2.setText(_translate("Dialog", "600"))
         self.groupBox_2.setTitle(_translate("Dialog", "Real and imaginary range"))
+        self.lineEdit_3.setText(_translate("Dialog", "-1"))
         self.label_3.setText(_translate("Dialog", "Real end value"))
+        self.lineEdit_4.setText(_translate("Dialog", "1"))
         self.label_4.setText(_translate("Dialog", "Real start value"))
         self.label_5.setText(_translate("Dialog", "Imag end value"))
+        self.lineEdit_5.setText(_translate("Dialog", "-1.2"))
+        self.lineEdit_6.setText(_translate("Dialog", "1.2"))
         self.label_6.setText(_translate("Dialog", "Imag start value"))
         self.groupBox_3.setTitle(_translate("Dialog", "Constant complex number"))
         self.label_7.setText(_translate("Dialog", "C real"))
         self.label_8.setText(_translate("Dialog", "C imag"))
+        if self.J is True:
+            self.lineEdit_8.setText(_translate("Dialog", "0.01"))
+            self.lineEdit_7.setText(_translate("Dialog", "0.285"))
         self.pushButton.setText(_translate("Dialog", "Draw"))
+
+    def clicked(self):
+        if self.J is True:
+            self.Julia.draw(self.M)
+        else:
+            self.Mandelbrot.draw(self.M)
