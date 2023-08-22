@@ -1,5 +1,4 @@
-import Mandelbrot
-import Julia
+from Fractals import Julia, Mandelbrot
 
 f = Mandelbrot.Mandelbrot()
 #f.draw()

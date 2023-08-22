@@ -1,5 +1,4 @@
-
-from Model import Model as m
+from Fractals.Model import Model as m
 from PIL import Image, ImageDraw
 
 class Mandelbrot:
