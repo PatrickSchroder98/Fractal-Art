@@ -10,7 +10,8 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 from Fractals.Julia import Julia
 from Fractals.Mandelbrot import Mandelbrot
 from Fractals.Model import Model
-
+from PyQt6.QtWidgets import QDialog
+from Interface.UI.Error import Error
 
 class Ui_Dialog(object):
 
@@ -100,13 +101,18 @@ class Ui_Dialog(object):
         self.lineEdit.setText(_translate("Dialog", "800"))
         self.lineEdit_2.setText(_translate("Dialog", "600"))
         self.groupBox_2.setTitle(_translate("Dialog", "Real and imaginary range"))
-        self.lineEdit_3.setText(_translate("Dialog", "-1"))
+        if self.J is True:
+            self.lineEdit_3.setText(_translate("Dialog", "-1"))
+            self.lineEdit_5.setText(_translate("Dialog", "-1.2"))
+            self.lineEdit_6.setText(_translate("Dialog", "1.2"))
+        else:
+            self.lineEdit_3.setText(_translate("Dialog", "-2"))
+            self.lineEdit_5.setText(_translate("Dialog", "-1"))
+            self.lineEdit_6.setText(_translate("Dialog", "1"))
         self.label_3.setText(_translate("Dialog", "Real end value"))
         self.lineEdit_4.setText(_translate("Dialog", "1"))
         self.label_4.setText(_translate("Dialog", "Real start value"))
         self.label_5.setText(_translate("Dialog", "Imag end value"))
-        self.lineEdit_5.setText(_translate("Dialog", "-1.2"))
-        self.lineEdit_6.setText(_translate("Dialog", "1.2"))
         self.label_6.setText(_translate("Dialog", "Imag start value"))
         self.groupBox_3.setTitle(_translate("Dialog", "Constant complex number"))
         self.label_7.setText(_translate("Dialog", "C real"))
@@ -117,7 +123,38 @@ class Ui_Dialog(object):
         self.pushButton.setText(_translate("Dialog", "Draw"))
 
     def clicked(self):
-        if self.J is True:
-            self.Julia.draw(self.M)
-        else:
-            self.Mandelbrot.draw(self.M)
+
+        w = self.lineEdit.text()
+        h = self.lineEdit_2.text()
+
+        rsv = self.lineEdit_3.text()
+        rev = self.lineEdit_4.text()
+        isv = self.lineEdit_5.text()
+        iev = self.lineEdit_6.text()
+
+        cr = self.lineEdit_7.text()
+        ci = self.lineEdit_8.text()
+
+        try:
+            self.M.set_height(int(h))
+            self.M.set_width(int(w))
+            self.M.set_re_start(float(rsv))
+            self.M.set_re_end(float(rev))
+            self.M.set_im_start(float(isv))
+            self.M.set_im_end(float(iev))
+
+            if self.J is True:
+                self.M.set_c_real(float(cr))
+                self.M.set_c_imag(float(ci))
+                self.Julia.draw(self.M)
+            else:
+                self.Mandelbrot.draw(self.M)
+        except:
+            self.popup = QDialog()
+            self.popup_ui = Error()
+            self.popup_ui.setupUi(self.popup)
+            self.popup.exec()
+
+
+
+

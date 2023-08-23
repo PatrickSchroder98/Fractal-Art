@@ -9,7 +9,7 @@
 from PyQt6 import QtCore, QtGui, QtWidgets
 
 
-class Ui_Dialog(object):
+class Error(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(272, 122)
@@ -20,11 +20,16 @@ class Ui_Dialog(object):
         self.label.setGeometry(QtCore.QRect(40, 30, 211, 20))
         self.label.setObjectName("label")
 
+        self.d = Dialog
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
+        self.pushButton.clicked.connect(self.clicked)
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Error"))
         self.pushButton.setText(_translate("Dialog", "OK"))
         self.label.setText(_translate("Dialog", "Error - incorrect type of input data"))
+
+    def clicked(self):
+        self.d.close()
