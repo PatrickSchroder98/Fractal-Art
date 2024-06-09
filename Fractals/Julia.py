@@ -3,8 +3,11 @@ from math import log, log2, pi, e
 
 
 class Julia:
+    """Class containing a method to generate Julia set."""
 
     def draw(self, m):
+        """Method allowing to draw Julia set with given coordinates and in given resolution. Image is created using
+        Pillow library. Method show() displays created image."""
 
         img = Image.new(mode='RGB', size=(m.width, m.height), color=(256, 256, 256))
         draw = ImageDraw.Draw(img)

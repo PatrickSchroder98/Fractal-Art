@@ -1,8 +1,11 @@
 from PIL import Image, ImageDraw
 
 class Mandelbrot:
+    """Class containing a method to generate Mandelbrot set."""
 
     def draw(self, m):
+        """Method allowing to draw Mandelbrot set with given coordinates and in given resolution. Image is created using
+        Pillow library. Method show() displays created image."""
 
         img = Image.new(mode='RGB', size=(m.width, m.height), color=(256, 256, 256))
         draw = ImageDraw.Draw(img)
