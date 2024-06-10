@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interface.UI package &mdash; Fractal Art 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=92fd9be5" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=8d563738"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Fractal Art
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Interface.UI package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-Interface.UI.Error">Interface.UI.Error module</a><ul>
+<li><a class="reference internal" href="#Interface.UI.Error.Error"><code class="docutils literal notranslate"><span class="pre">Error</span></code></a><ul>
+<li><a class="reference internal" href="#Interface.UI.Error.Error.clicked"><code class="docutils literal notranslate"><span class="pre">Error.clicked()</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Error.Error.retranslateUi"><code class="docutils literal notranslate"><span class="pre">Error.retranslateUi()</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Error.Error.setupUi"><code class="docutils literal notranslate"><span class="pre">Error.setupUi()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Interface.UI.Fractals_Mainwindow">Interface.UI.Fractals_Mainwindow module</a><ul>
+<li><a class="reference internal" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow"><code class="docutils literal notranslate"><span class="pre">Ui_MainWindow</span></code></a><ul>
+<li><a class="reference internal" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.clicked"><code class="docutils literal notranslate"><span class="pre">Ui_MainWindow.clicked()</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.clicked_2"><code class="docutils literal notranslate"><span class="pre">Ui_MainWindow.clicked_2()</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.retranslateUi"><code class="docutils literal notranslate"><span class="pre">Ui_MainWindow.retranslateUi()</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.setupUi"><code class="docutils literal notranslate"><span class="pre">Ui_MainWindow.setupUi()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Interface.UI.Input">Interface.UI.Input module</a><ul>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog</span></code></a><ul>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog.J"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog.J</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog.Julia"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog.Julia</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog.M"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog.M</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog.Mandelbrot"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog.Mandelbrot</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog.clicked"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog.clicked()</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog.retranslateUi"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog.retranslateUi()</span></code></a></li>
+<li><a class="reference internal" href="#Interface.UI.Input.Ui_Dialog.setupUi"><code class="docutils literal notranslate"><span class="pre">Ui_Dialog.setupUi()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#module-Interface.UI">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Fractal Art</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Interface.UI package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Interface.UI.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="interface-ui-package">
+<h1>Interface.UI package<a class="headerlink" href="#interface-ui-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Interface.UI.Error">
+<span id="interface-ui-error-module"></span><h2>Interface.UI.Error module<a class="headerlink" href="#module-Interface.UI.Error" title="Link to this heading"></a></h2>
+<p>Form implementation generated from reading ui file ‘Error.ui’</p>
+<p>Created by: PyQt6 UI code generator 6.5.2</p>
+<p>WARNING: Any manual changes made to this file will be lost when pyuic6 is
+run again.  Do not edit this file unless you know what you are doing.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="Interface.UI.Error.Error">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Interface.UI.Error.</span></span><span class="sig-name descname"><span class="pre">Error</span></span><a class="reference internal" href="_modules/Interface/UI/Error.html#Error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Error.Error" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CLass containing methods related to widget with error message.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Error.Error.clicked">
+<span class="sig-name descname"><span class="pre">clicked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Error.html#Error.clicked"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Error.Error.clicked" title="Link to this definition"></a></dt>
+<dd><p>Method that closes the widget when the button is clicked.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Error.Error.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Dialog</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Error.html#Error.retranslateUi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Error.Error.retranslateUi" title="Link to this definition"></a></dt>
+<dd><p>Method called to set the proper text in objects of widget.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Error.Error.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Dialog</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Error.html#Error.setupUi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Error.Error.setupUi" title="Link to this definition"></a></dt>
+<dd><p>Method called to build the widget with error message. This method also handles the button click event.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Interface.UI.Fractals_Mainwindow">
+<span id="interface-ui-fractals-mainwindow-module"></span><h2>Interface.UI.Fractals_Mainwindow module<a class="headerlink" href="#module-Interface.UI.Fractals_Mainwindow" title="Link to this heading"></a></h2>
+<p>Form implementation generated from reading ui file ‘Fractals_Mainwindow.ui’</p>
+<p>Created by: PyQt6 UI code generator 6.5.2</p>
+<p>WARNING: Any manual changes made to this file will be lost when pyuic6 is
+run again.  Do not edit this file unless you know what you are doing.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="Interface.UI.Fractals_Mainwindow.Ui_MainWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Interface.UI.Fractals_Mainwindow.</span></span><span class="sig-name descname"><span class="pre">Ui_MainWindow</span></span><a class="reference internal" href="_modules/Interface/UI/Fractals_Mainwindow.html#Ui_MainWindow"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CLass containing methods related to main window of application.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Fractals_Mainwindow.Ui_MainWindow.clicked">
+<span class="sig-name descname"><span class="pre">clicked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Fractals_Mainwindow.html#Ui_MainWindow.clicked"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.clicked" title="Link to this definition"></a></dt>
+<dd><p>Method called to display the widget with input options for Mandelbrot set.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Fractals_Mainwindow.Ui_MainWindow.clicked_2">
+<span class="sig-name descname"><span class="pre">clicked_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Fractals_Mainwindow.html#Ui_MainWindow.clicked_2"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.clicked_2" title="Link to this definition"></a></dt>
+<dd><p>Method called to display the widget with input options for Julia set.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Fractals_Mainwindow.Ui_MainWindow.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">MainWindow</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Fractals_Mainwindow.html#Ui_MainWindow.retranslateUi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.retranslateUi" title="Link to this definition"></a></dt>
+<dd><p>Method called to set the proper text in objects of widget.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Fractals_Mainwindow.Ui_MainWindow.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">MainWindow</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Fractals_Mainwindow.html#Ui_MainWindow.setupUi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Fractals_Mainwindow.Ui_MainWindow.setupUi" title="Link to this definition"></a></dt>
+<dd><p>Method called to build the main window. This method also handles the buttons click event.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Interface.UI.Input">
+<span id="interface-ui-input-module"></span><h2>Interface.UI.Input module<a class="headerlink" href="#module-Interface.UI.Input" title="Link to this heading"></a></h2>
+<p>Form implementation generated from reading ui file ‘Input.ui’</p>
+<p>Created by: PyQt6 UI code generator 6.5.2</p>
+<p>WARNING: Any manual changes made to this file will be lost when pyuic6 is
+run again.  Do not edit this file unless you know what you are doing.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Interface.UI.Input.</span></span><span class="sig-name descname"><span class="pre">Ui_Dialog</span></span><a class="reference internal" href="_modules/Interface/UI/Input.html#Ui_Dialog"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>CLass containing methods related to widget with input options of application. It also contains the objects of
+classes Model, Julia and Mandelbrot.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog.J">
+<span class="sig-name descname"><span class="pre">J</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog.J" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog.Julia">
+<span class="sig-name descname"><span class="pre">Julia</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Fractals.Julia.Julia</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog.Julia" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog.M">
+<span class="sig-name descname"><span class="pre">M</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Fractals.Model.Model</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog.M" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog.Mandelbrot">
+<span class="sig-name descname"><span class="pre">Mandelbrot</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;Fractals.Mandelbrot.Mandelbrot</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog.Mandelbrot" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog.clicked">
+<span class="sig-name descname"><span class="pre">clicked</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Input.html#Ui_Dialog.clicked"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog.clicked" title="Link to this definition"></a></dt>
+<dd><p>Method that sets the variables and calls the proper draw() method when the button is clicked. If the values
+are not correct, it displays the widget with error.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog.retranslateUi">
+<span class="sig-name descname"><span class="pre">retranslateUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Dialog</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Input.html#Ui_Dialog.retranslateUi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog.retranslateUi" title="Link to this definition"></a></dt>
+<dd><p>Method called to set the proper text in objects of widget. Some texts depend on which fractal is chosen to
+be generated.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Interface.UI.Input.Ui_Dialog.setupUi">
+<span class="sig-name descname"><span class="pre">setupUi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Dialog</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">J</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Interface/UI/Input.html#Ui_Dialog.setupUi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#Interface.UI.Input.Ui_Dialog.setupUi" title="Link to this definition"></a></dt>
+<dd><p>Method called to build the widget with input options. This method also handles the button click event.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Interface.UI">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Interface.UI" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Patrick Schroder.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
